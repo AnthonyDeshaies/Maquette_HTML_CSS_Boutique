@@ -1,0 +1,503 @@
+/* DOCUMENT INFORMATION
+    - Surf Shop
+    - Version : 1.0.0
+    - Author : Antoine
+*/
+
+/* COLORS
+    - défault body text
+    - H1
+    - H2
+    - H3
+
+    - button
+    - button:hover
+
+    - border
+*/
+
+/* FONTS
+
+    - default    Lato
+    - subtile
+*/
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+*/
+
+
+
+
+/* GLOBAL
+=========================================================================================================*/
+
+html
+{
+    background-color: #fff;
+}
+
+h1, h2, h3, h4
+{
+    font-family: 'lato', 'arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+
+h2
+{
+    color: black;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2::after
+{
+    display: block;
+    height: 2px;
+    background-color: cornflowerblue;
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3
+{
+    font-size: 160%;
+}
+
+
+p
+{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+section
+{
+    padding: 30px 0px 60px 0px;
+}
+
+
+
+
+/* HEADER
+=========================================================================================================*/
+
+header
+{
+    background-image: linear-gradient(  rgba(0, 242, 96, 0.2),
+                                        rgba(7, 117, 230, 0.4)
+                                        ), 
+                                        url(../img/teahupoo.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.home_title
+{
+    position: absolute;
+    max-width: 720px;
+    top: 30%;
+}
+
+.home_title h1
+{
+    color: white;
+    font-size: 340%;
+}
+
+.home_title h1 span
+{
+    font-weight: 700;
+}
+
+.home_title p
+{
+    color: white;
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn_full
+{
+    background-color: white;
+}
+
+.btn_ghost
+{
+    border: 1px white solid;
+    color: white;
+}
+
+.btn_full:hover
+{
+    background-color: rgb(35, 185, 196);
+    border: 1px rgb(35, 185, 196) solid;
+    color: white;
+}
+
+.btn_ghost:hover
+{
+    background-color: rgb(35, 185, 196);
+    border: 1px rgb(35, 185, 196) solid;
+    color: white;
+}
+
+
+
+
+/* PRODUCT
+=========================================================================================================*/
+
+.product_img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.product_icon
+{
+    size: 35px;
+    color: cornflowerblue;
+    transition: all 1s;
+}
+
+.product_plus
+{
+    margin: 25px 0px;
+}
+
+.product_plus:hover .product_icon
+{
+    transform: translateX(20px);
+}
+
+
+
+/* STYLE SURF
+=========================================================================================================*/
+
+.section_style_surf
+{
+    background-color: rgb(207, 207, 207);
+}
+
+.style_surf_detail
+{
+    height: 510px;
+    background-color: rgb(190, 190, 190);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.style_surf_detail img
+{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.style_surf_detail h4
+{
+    text-align: center;
+}
+
+
+
+
+
+/* PICTURES GALLERY
+=========================================================================================================*/
+
+.gallery_img
+{
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.gallery_title
+{
+    position: absolute;
+    bottom: 20px;
+    left: 45px;
+}
+
+.gallery_title h4
+{
+    color: black;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+/* CLIENTS OPINION
+=========================================================================================================*/
+
+.client
+{
+    background-image: linear-gradient(  rgba(0, 242, 96, 0.2),
+                                        rgba(7, 117, 230, 0.4)
+                                        ), 
+                                        url(../img/snake_wave.jpg);
+    height: 380px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+blockquote
+{
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+}
+blockquote:before
+{
+    content: "\201C";
+    font-size: 800%;
+    font-family: "sanchez", sans-serif;
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+cite
+{
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+
+cite img
+{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+/* TABLEAUX DES PRODUITS
+=========================================================================================================*/
+
+.pack
+{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 380px;
+}
+
+.pack h3
+{
+    color: cornflowerblue;
+    font-weight: 400;
+}
+
+.pack h4
+{
+    font-size: 200%;
+    font-weight: 100;
+}
+.pack_title
+{
+    padding: 10px 10px 0px 10px;
+    border-bottom: 1px solid rgb(196, 215, 250);
+}
+
+.pack_content ul
+{
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack_prenium
+{
+    background-color: rgb(207, 207, 207);
+}
+
+.pack_title_prenium
+{
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: rgb(35, 185, 196);
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+
+}
+
+.pack_content ul li i
+{
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.fa-arrows-alt-v:before 
+{
+    margin-right: 7px;
+}
+
+.pack_signup
+{
+    text-align: center;
+}
+
+.btn_pack
+{
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    padding: 7px;
+    transition: background-color 1s, color 1s;
+}
+
+.btn_pack_prenium
+{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.btn_pack:hover
+{
+    background-color: rgb(190, 190, 190);
+    color: cornflowerblue;
+    text-decoration: none;
+}
+.btn_pack_prenium:hover
+{
+    background-color: white;
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.btn_pack i
+{
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* CONTACT
+=========================================================================================================*/
+
+.phone i
+{
+    margin-right: 10px;
+}
+
+.adress i
+{
+    margin-right: 10px;
+}
+
+.form_i i
+{
+    margin-right: 5px;
+}
+
+.submit_btn_container
+{
+    text-align: center;
+}
+
+.submit_btn
+{
+    background-color: cornflowerblue;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.submit_btn:hover
+{
+    color: black;
+}
+
+form
+{
+    background-color: rgb(230, 230, 230);
+    width: 410px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 7px;
+    width: 410px;
+}
+
+.map
+{
+    margin-top: 105px;
+}
+
+.select_service
+{
+    margin-left: 29px;
+}
+
+textarea
+{
+    width: 394px;
+}
+
+
+
+
+
+/* FOOTER
+=========================================================================================================*/
+
+footer
+{
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding: 20px;
+}
+
+.copyright
+{
+    text-align: center;
+}
+
+.copyright a
+{
+    color: white;
+}
